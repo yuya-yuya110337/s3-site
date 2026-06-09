@@ -1,3 +1,6 @@
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="60" />
+
+
 # AWS学習ログ（S3 静的サイトホスティング）
 
 ## ■ 概要
