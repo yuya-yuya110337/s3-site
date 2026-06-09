@@ -1,0 +1,183 @@
+/* ===========================
+   Base（全体）
+=========================== */
+body {
+  font-family: "Capriola", sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-repeat: repeat;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 120px 0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-repeat: repeat;
+}
+
+/* ===========================
+   Sectionごとの背景色
+=========================== */
+#about-this-site {
+  background-color: rgba(249, 249, 255, 0.9);
+}
+
+#about-me {
+  background-color: rgba(255, 253, 247, 0.9);
+}
+
+#projects {
+  background-color: rgba(247, 253, 252, 0.9);
+}
+
+#skills {
+  background-color: rgba(248, 248, 248, 0.9);
+}
+
+#profile {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#contact {
+  background-color: rgba(249, 249, 255, 0.9);
+}
+
+/* ===========================
+   Header
+=========================== */
+nav.teal {
+  background-color: #5ab9a8 !important;
+}
+
+nav .brand-logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+nav ul li a {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* ===========================
+   Top Banner
+=========================== */
+.top-banner {
+  background:
+    linear-gradient(rgba(90,185,168,0.92), rgba(90,185,168,0.92)),
+    url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 140px 0;
+}
+
+.top-banner h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.top-banner h5 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.scroll-to-bottom-btn i {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* ===========================
+   Works（カード）
+=========================== */
+.card {
+  box-shadow: none !important;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(2px);
+}
+
+.card-image img {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-title {
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  color: #444;
+}
+
+/* ===========================
+   Timeline（位置調整）
+=========================== */
+.timeline {
+  position: relative;
+  margin: 60px auto;
+  padding-left: 50px;
+  border-left: 3px solid #b0a090;
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #5ab9a8;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.timeline-item .year {
+  font-weight: bold;
+  color: #5a4a42;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: 10px;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+/* ===========================
+   Skill Charts（Chart.js）
+=========================== */
+#skills canvas {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.page-footer {
+  background-color: #5ab9a8 !important;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.page-footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #fff;
+}
+

@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Yuya Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Icons & Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Capriola">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+<header>
+  <div class="navbar-fixed">
+    <nav class="teal lighten-2">
+      <div class="nav-wrapper container">
+        <a href="#top-banner-container" class="brand-logo">Yuya</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#top-banner-container">トップ</a></li>
+          <li><a href="#about-this-site">このサイトについて</a></li>
+          <li><a href="#projects">制作物</a></li>
+          <li><a href="#skills">スキル</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#contact">連絡先</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul id="nav-mobile" class="side-nav">
+    <li><a href="#top-banner-container">トップ</a></li>
+    <li><a href="#about-this-site">このサイトについて</a></li>
+    <li><a href="#projects">制作物</a></li>
+    <li><a href="#skills">スキル</a></li>
+    <li><a href="#profile">プロフィール</a></li>
+    <li><a href="#contact">連絡先</a></li>
+  </ul>
+</header>
+
+<!-- Top Banner -->
+<div id="top-banner-container" class="valign-wrapper top-banner">
+  <div class="container center">
+    <h1 class="header" data-aos="zoom-in" data-aos-duration="700">Hamada Yuya</h1>
+    <h5 data-aos="fade-up" data-aos-delay="250">Hamada Yuya Engineering Laboratory</h5>
+    <div class="scroll-to-bottom-btn" data-aos="fade-up" data-aos-delay="800">
+      <a href="#about-this-site"><i class="material-icons waves-effect waves-light">keyboard_arrow_down</i></a>
+    </div>
+  </div>
+</div>
+
+<!-- About this site -->
+<section id="about-this-site" class="section">
+  <div class="container">
+    <h2 class="center grey-text text-darken-3">About this site</h2>
+    <p class="center grey-text text-darken-3">
+      ここはエンジニア濱田 悠哉のポートフォリオサイトです。<br>
+      これまでに手がけた制作物、身につけたスキルをまとめています。<br>
+      お茶でも飲みながらごゆるりとご覧ください。
+    </p>
+  </div>
+</section>
+
+<!-- About me -->
+<section id="about-me" class="section">
+  <div class="container">
+    <h2 class="center">About me</h2>
+    <div class="row">
+      <div class="col s12 m3 offset-m2 center">
+        <img src="images/profile.png" alt="プロフィール画像" width="150" height="150" class="circle responsive-img" data-aos="zoom-in">
+      </div>
+      <div class="col s12 m5">
+        <p>
+          神戸市在住のインフラ・クラウドエンジニア。<br>
+          Linuxサーバ構築、NginxによるWeb公開、GitHub Pagesでのサイト運用などを実践しています。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Works -->
+<section id="projects" class="section">
+  <div class="container">
+    <h3 class="center">Works</h3>
+    <p class="center">これまでに構築した環境や制作物を紹介します。</p>
+
+    <div class="row">
+
+      <!-- Nginx -->
+      <div class="col s12 m4" data-aos="fade-up">
+        <a class="modal-trigger" href="#modal-nginx">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="works/webserver1.png" alt="Nginx">
+            </div>
+            <div class="card-content center">
+              <span class="card-title">Nginx Webサーバ構築</span>
+              <p>AlmaLinux上にNginxを構築し、自作HTMLを公開。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="col s12 m4" data-aos="fade-up" data-aos-delay="150">
+        <a class="modal-trigger" href="#modal-portfolio">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="works/hoda_portfolio.jpg" alt="Portfolio">
+            </div>
+            <div class="card-content center">
+              <span class="card-title">ポートフォリオサイト</span>
+              <p>HTML/CSSで作成し、GitHub Pagesで公開予定。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- AWS -->
+      <div class="col s12 m4" data-aos="fade-up" data-aos-delay="300">
+        <a class="modal-trigger" href="#modal-aws">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="works/aws.png" alt="AWS">
+            </div>
+            <div class="card-content center">
+              <span class="card-title">AWS学習ログ</span>
+              <p>EC2/VPC/S3を中心に検証環境を構築。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills（完全統合版） -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2 class="center">My skill set</h2>
+    <p class="center">
+      修練のすえ身につけたスキルをグラフィカルにまとめました。<br>
+      フロントエンド・バックエンド・DevOps の3領域で整理しています。
+    </p>
+
+    <div class="row">
+      <div class="col s12 m4">
+        <h5 class="center red-text">Front-end</h5>
+        <canvas id="frontendChart"></canvas>
+      </div>
+      <div class="col s12 m4">
+        <h5 class="center blue-text">Back-end</h5>
+        <canvas id="backendChart"></canvas>
+      </div>
+      <div class="col s12 m4">
+        <h5 class="center orange-text">DevOps</h5>
+        <canvas id="devopsChart"></canvas>
+      </div>
+    </div>
+
+    <div class="center" style="margin-top:40px;">
+      <h6>スキルレベルの目安：</h6>
+      <p>
+        5 - Super Saiyan<br>
+        4 - Ninja<br>
+        3 - Stand Master<br>
+        2 - I can use it a little.<br>
+        1 - Beginner
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Profile Timeline -->
+<section id="profile" class="section">
+  <div class="container">
+    <h2 class="center">Profile</h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-left"><span class="year">2000~</span><p>神戸の田舎町で産声を上げる。</p></div>
+      <div class="timeline-item" data-aos="fade-left"><span class="year">2009~</span><p>小学生から高校まで野球をやり、協調性を高める。</p></div>
+      <div class="timeline-item" data-aos="fade-left"><span class="year">2019~</span><p>大学でビジネス法について学ぶ。</p></div>
+      <div class="timeline-item" data-aos="fade-left"><span class="year">2023~</span><p>携帯電話の法人向け営業として働き始める。</p></div>
+      <div class="timeline-item" data-aos="fade-left"><span class="year">2024~</span><p>ITインフラに興味を持ち、IT業界への転職を決意。</p></div>
+      <div class="timeline-item" data-aos="fade-left"><span class="year">2026~</span><p>インフラ・クラウド構築を中心に学習を継続。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="center">Contact</h2>
+    <p class="center">
+      制作物や学習ログに関するお問い合わせは、今後 GitHub にて公開予定です。
+    </p>
+  </div>
+</section>
+
+<footer class="page-footer teal lighten-2">
+  <div class="container center white-text">
+    <p>Thank you for coming!</p>
+    <p>© 2026 Hamada Yuya</p>
+  </div>
+</footer>
+
+<!-- Modal: Nginx -->
+<div id="modal-nginx" class="modal">
+  <div class="modal-content">
+    <h4>Nginx Webサーバ構築</h4>
+    <p>
+      AlmaLinux 上に Nginx を構築し、自作 HTML を公開した学習成果です。<br>
+      firewalld の設定、systemctl によるサービス管理など、基本的なサーバ構築の流れを理解しました。
+    </p>
+    <img src="works/webserver1.png" class="responsive-img" alt="Nginx">
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">閉じる</a>
+  </div>
+</div>
+
+<!-- Modal: Portfolio -->
+<div id="modal-portfolio" class="modal">
+  <div class="modal-content">
+    <h4>ポートフォリオサイト</h4>
+    <p>
+      HTML/CSS を用いて制作したポートフォリオサイトです。<br>
+      GitHub Pages で公開予定で、レスポンシブ対応や UI の統一感を意識して制作しました。
+    </p>
+    <img src="works/hoda_portfolio.jpg" class="responsive-img" alt="Portfolio">
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">閉じる</a>
+  </div>
+</div>
+
+<!-- Modal: AWS -->
+<div id="modal-aws" class="modal">
+  <div class="modal-content">
+    <h4>AWS学習ログ</h4>
+    <p>
+      EC2 / VPC / S3 を中心に学習した内容をまとめています。<br>
+      小規模な検証環境を構築し、ネットワークやセキュリティグループの理解を深めました。
+    </p>
+    <img src="works/aws.png" class="responsive-img" alt="AWS">
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">閉じる</a>
+  </div>
+</div>
+
+<!-- Chart.js 読み込み -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- レーダーチャート描画コード -->
+<script>
+  const radarOptions = {
+    scales: {
+      r: {
+        min: 0,
+        max: 5,
+        ticks: { stepSize: 1 },
+        grid: { color: "#ddd" },
+        angleLines: { color: "#ccc" },
+        pointLabels: { font: { size: 12 } }
+      }
+    },
+    plugins: { legend: { display: false } }
+  };
+
+  // Front-end
+  new Chart(document.getElementById("frontendChart"), {
+    type: "radar",
+    data: {
+      labels: ["HTML/CSS", "JavaScript", "jQuery", "Vue.js/Vue CLI", "CSS FW", "WordPress"],
+      datasets: [{
+        label: "Front-end",
+        data: [4, 3, 2, 4, 2, 3],
+        backgroundColor: "rgba(255,99,132,0.2)",
+        borderColor: "rgba(255,99,132,1)",
+        pointBackgroundColor: "rgba(255,99,132,1)"
+      }]
+    },
+    options: radarOptions
+  });
+
+  // Back-end
+  new Chart(document.getElementById("backendChart"), {
+    type: "radar",
+    data: {
+      labels: ["Python", "Django", "Go", "PostgreSQL", "MySQL", "Nginx"],
+      datasets: [{
+        label: "Back-end",
+        data: [4, 3, 2, 3, 2, 3],
+        backgroundColor: "rgba(54,162,235,0.2)",
+        borderColor: "rgba(54,162,235,1)",
+        pointBackgroundColor: "rgba(54,162,235,1)"
+      }]
+    },
+    options: radarOptions
+  });
+
+  // DevOps
+  new Chart(document.getElementById("devopsChart"), {
+    type: "radar",
+    data: {
+      labels: ["Linux", "AWS", "Git/GitHub", "Vim", "Docker", "Docker Compose"],
+      datasets: [{
+        label: "DevOps",
+        data: [3, 2, 2, 3, 3, 2],
+        backgroundColor: "rgba(255,159,64,0.2)",
+        borderColor: "rgba(255,159,64,1)",
+        pointBackgroundColor: "rgba(255,159,64,1)"
+      }]
+    },
+    options: radarOptions
+  });
+</script>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  $(function() {
+    $(".button-collapse").sideNav();
+    $(".collapsible").collapsible();
+    $('.modal').modal();
+    AOS.init();
+  });
+</script>
+
+</body>
+</html>
+
