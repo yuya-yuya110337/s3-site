@@ -24,7 +24,7 @@
   <div class="navbar-fixed">
     <nav class="teal lighten-2">
       <div class="nav-wrapper container">
-        <a href="#top-banner-container" class="brand-logo">Yuya</a>
+        <a href="#top-banner-container" class="brand-logo">Yuya Portfolio  </a>
         <a href="#" data-activates="nav-mobile" class="button-collapse">
           <i class="material-icons">menu</i>
         </a>
@@ -95,50 +95,47 @@
 <section id="projects" class="section">
   <div class="container">
     <h3 class="center">Works</h3>
-    <p class="center">これまでに構築した環境や制作物を紹介します。</p>
+    <p class="center">私が制作した、成果物たちをご紹介します。</p>
 
     <div class="row">
 
-      <!-- Nginx -->
+      <!-- AWS S3 Site -->
       <div class="col s12 m4" data-aos="fade-up">
+        <a class="modal-trigger" href="#modal-aws">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="images/S3構成図.png" alt="AWS S3 Site">
+            </div>
+            <div class="card-content center">
+              <span class="card-title">AWS S3 Site</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Nginx Practice -->
+      <div class="col s12 m4" data-aos="fade-up" data-aos-delay="150">
         <a class="modal-trigger" href="#modal-nginx">
           <div class="card hoverable">
             <div class="card-image">
-              <img src="works/webserver1.png" alt="Nginx">
+              <img src="images/Nginxテストページ.png" alt="EC2 Nginx Practice">
             </div>
             <div class="card-content center">
-              <span class="card-title">Nginx Webサーバ構築</span>
-              <p>AlmaLinux上にNginxを構築し、自作HTMLを公開。</p>
+              <span class="card-title">EC2 Nginx Practice</span>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Portfolio -->
-      <div class="col s12 m4" data-aos="fade-up" data-aos-delay="150">
+      <div class="col s12 m4" data-aos="fade-up" data-aos-delay="300">
         <a class="modal-trigger" href="#modal-portfolio">
           <div class="card hoverable">
             <div class="card-image">
-              <img src="works/hoda_portfolio.jpg" alt="Portfolio">
+              <img src="images/works_portfolio.png" alt="Portfolio">
             </div>
             <div class="card-content center">
-              <span class="card-title">ポートフォリオサイト</span>
-              <p>HTML/CSSで作成し、GitHub Pagesで公開予定。</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- AWS -->
-      <div class="col s12 m4" data-aos="fade-up" data-aos-delay="300">
-        <a class="modal-trigger" href="#modal-aws">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img src="works/aws.png" alt="AWS">
-            </div>
-            <div class="card-content center">
-              <span class="card-title">AWS学習ログ</span>
-              <p>EC2/VPC/S3を中心に検証環境を構築。</p>
+              <span class="card-title">Portfolio</span>
             </div>
           </div>
         </a>
@@ -175,11 +172,11 @@
     <div class="center" style="margin-top:40px;">
       <h6>スキルレベルの目安：</h6>
       <p>
-        5 - Super Saiyan<br>
-        4 - Ninja<br>
-        3 - Stand Master<br>
-        2 - I can use it a little.<br>
-        1 - Beginner
+        5 - Expert      ：高度な知識と実務経験を持ち、最適化や改善ができる。<br>
+        4 - Advanced    ：実務レベルで安定して活用できる。応用力がある。<br>
+        3 - Intermediate：基礎を理解し、一般的な課題に対応できる。<br>
+        2 - Basic       ：基本的な操作や設定ができる。学習中の段階。<br>
+        1 - Beginner    ：学習を始めたばかりの初歩的なレベル。<br>
       </p>
     </div>
   </div>
@@ -218,50 +215,85 @@
   </div>
 </footer>
 
-<!-- Modal: Nginx -->
-<div id="modal-nginx" class="modal">
+<!-- AWS Modal -->
+<div id="modal-aws" class="modal modal-large">
   <div class="modal-content">
-    <h4>Nginx Webサーバ構築</h4>
-    <p>
-      AlmaLinux 上に Nginx を構築し、自作 HTML を公開した学習成果です。<br>
-      firewalld の設定、systemctl によるサービス管理など、基本的なサーバ構築の流れを理解しました。
-    </p>
-    <img src="works/webserver1.png" class="responsive-img" alt="Nginx">
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">閉じる</a>
+    <div class="row">
+      <!-- 左側：説明 -->
+      <div class="col s12 m6">
+        <h4>AWS S3 Site</h4>
+        <p>
+          AWS S3 を利用して静的 Web サイトを公開した学習プロジェクトです。
+          バケットの作成、パブリックアクセス設定、静的ウェブサイトホスティングの有効化、バケットポリシーの設定など、S3 を用いた Web 公開の基本的な流れを一通り経験しました。
+          HTML/CSS で作成したページをアップロードし、S3 のエンドポイントから実際にアクセスできる状態まで構築しています。
+        </p>
+        <h5>使用技術など</h5>
+        <p>AWS S3, 静的ウェブサイトホスティング, バケットポリシー, HTML/CSS, Git / GitHub</p>
+        <a href="https://github.com/yuya-yuya110337/aws-s3-site" target="_blank" class="btn blue lighten-1">
+          GitHubを見る
+        </a>
+      </div>
+
+      <!-- 右側：画像 -->
+      <div class="col s12 m6 center">
+        <img src="images/S3構成図.png" alt="AWS S3 Site" class="responsive-img modal-image">
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Modal: Portfolio -->
-<div id="modal-portfolio" class="modal">
+<!-- Nginx Modal -->
+<div id="modal-nginx" class="modal modal-large">
   <div class="modal-content">
-    <h4>ポートフォリオサイト</h4>
-    <p>
-      HTML/CSS を用いて制作したポートフォリオサイトです。<br>
-      GitHub Pages で公開予定で、レスポンシブ対応や UI の統一感を意識して制作しました。
-    </p>
-    <img src="works/hoda_portfolio.jpg" class="responsive-img" alt="Portfolio">
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">閉じる</a>
+    <div class="row">
+      <!-- 左側：説明 -->
+      <div class="col s12 m6">
+        <h4>EC2 Nginx Practice</h4>
+        <p>
+          AWS EC2（Amazon Linux 2023）上に Nginx を構築し、静的 Web サーバーとして公開した学習プロジェクトです。
+          Nginx のインストール、設定ファイルの編集、公開ディレクトリの構成、systemctl によるサービス管理など、Web サーバーの基本的な仕組みを理解しながら構築しました。
+          また、セキュリティグループの設定やパブリック IP を用いた動作確認など、AWS 上での公開手順も一通り経験しています。
+        </p>
+        <h5>使用技術など</h5>
+        <p>AWS EC2, Nginx, Amazon Linux 2023, HTML/CSS, Git / GitHub,systemctl（サービス管理）, セキュリティグループ（AWS） </p>
+        <a href="https://github.com/yuya-yuya110337/ec2-nginx-practice" target="_blank" class="btn blue lighten-1">
+          GitHubを見る
+        </a>
+      </div>
+
+      <!-- 右側：画像 -->
+      <div class="col s12 m6 center">
+        <img src="images/Nginxテストページ.png" alt="EC2 Nginx Practice" class="responsive-img modal-image">
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Modal: AWS -->
-<div id="modal-aws" class="modal">
+<!-- Portfolio Modal -->
+<div id="modal-portfolio" class="modal modal-large">
   <div class="modal-content">
-    <h4>AWS学習ログ</h4>
-    <p>
-      EC2 / VPC / S3 を中心に学習した内容をまとめています。<br>
-      小規模な検証環境を構築し、ネットワークやセキュリティグループの理解を深めました。
-    </p>
-    <img src="works/aws.png" class="responsive-img" alt="AWS">
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">閉じる</a>
+    <div class="row">
+      <!-- 左側：説明 -->
+      <div class="col s12 m6">
+        <h4>Yuya Portfolio</h4>
+        <p>
+          このポートフォリオサイトは、HTML/CSS と MaterializeCSS を用いて構築した 1 ページ構成の Web サイトです。カードやモーダルを活用した作品展示、AOS によるスクロールアニメーションなど、視覚的に分かりやすく動きのある UI を意識して制作しました。また、AWS（EC2 / S3）や Nginx を用いた公開環境の構築も行い、フロントエンドからデプロイまで一連の流れを学習しています。
+        </p>
+        <h5>使用技術など</h5>
+        <p>HTML/CSS, MaterializeCSS, AOS（スクロールアニメーション）, Git / GitHub, AWS（EC2 / S3）, Nginx</p>
+        <a href="https://github.com/yuya-yuya110337" target="_blank" class="btn blue lighten-1">
+          GitHubを見る
+        </a>
+      </div>
+
+      <!-- 右側：画像 -->
+      <div class="col s12 m6 center">
+        <img src="images/works_portfolio.png" alt="Portfolio" class="responsive-img modal-image">
+      </div>
+    </div>
   </div>
 </div>
+
 
 <!-- Chart.js 読み込み -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
